@@ -129,11 +129,8 @@ Direct browser requests to Ollama (`localhost:11434`) may fail due to CORS polic
 
 <div align="center">
 
-<img width="900" alt="Luma Chat Interface" src="https://github.com/user-attachments/assets/9c2389d2-70db-4470-992b-ab09146d628d" />
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/2ca9049e-ce93-476b-9f81-7ff00c46fe1f" />
 
-<img width="900" alt="Luma Response View" src="https://github.com/user-attachments/assets/2f6afdcb-15cb-4302-9e15-786d5b01b37b" />
-
-<img width="900" alt="Luma Conversation" src="https://github.com/user-attachments/assets/cb5f0e8c-7814-4a46-8c3f-18f342593dd0" />
 
 </div>
 
@@ -151,11 +148,3 @@ Direct browser requests to Ollama (`localhost:11434`) may fail due to CORS polic
 - [Ollama](https://ollama.com) — for making local LLMs accessible to everyone
 - [llama3.2:3b](https://ollama.com/library/llama3.2) — the model powering Luma
 - [Gemini](https://gemini.google.com) — for guidance during development
-
----
-
-<div align="center">
-
-Made with ❤️ by [Samadhi Ayodhya Gamaarachchi](https://github.com/Samadhi-Ayodhya-Gamaarachchi)
-
-</div>
