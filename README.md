@@ -59,8 +59,8 @@ ollama run llama3.2:3b
 ### 4. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/luma-ai.git
-cd luma-ai
+git clone https://github.com/your-username/Luma-chatbot.git
+cd Luma-chatbot
 ```
 
 ### 5. Run the project
