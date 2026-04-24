@@ -52,7 +52,7 @@ async function askAI() {
     showTyping();
 
     try {
-        // Ollama API එකට කෙළින්ම කතා කිරීම
+        //  call Ollama API directly
         const response = await fetch('http://localhost:11434/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
