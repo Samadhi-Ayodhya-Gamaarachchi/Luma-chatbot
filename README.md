@@ -21,7 +21,7 @@
 | ⚡ **100% Offline** | Runs entirely using Ollama — no internet needed |
 | 💬 **Clean UI** | Minimal and distraction-free chat interface |
 | 🔒 **Privacy-First** | No data ever leaves your device |
-| 🤖 **Powered by llama3.2:3b** | Capable local model with fast responses |
+| 🤖 **Powered by llama3.2:3b** | Capable local model  |
 | 🎯 **Beginner-Friendly** | Simple architecture, easy to understand and extend |
 
 ---
@@ -59,8 +59,8 @@ ollama run llama3.2:3b
 ### 4. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/luma-ai.git
-cd luma-ai
+git clone https://github.com/your-username/Luma-chatbot.git
+cd Luma-chatbot
 ```
 
 ### 5. Run the project
