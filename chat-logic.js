@@ -46,7 +46,6 @@ async function getVisionResponse(userPrompt, file) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 model: "moondream", 
-                model: "gemma3:4b",
                 prompt: userPrompt || "What is in this image?",
                 images: [base64Image],
                 stream: false
