@@ -20,7 +20,7 @@
             </div>
             <div class="header-text">
                 <h2>Luma AI</h2>
-                <p>llama3.2:3b &middot; running locally</p>
+                <p> running locally</p>
             </div>
             <div class="status-dot" title="Local / Offline"></div>
         </div>
@@ -33,19 +33,22 @@
             </div>
         </div>
 
+        <div id="preview-container" style="padding: 0 20px;"></div>
+
         <div class="input-area">
-            <textarea id="user-input" rows="1" placeholder="Type a message..."></textarea>
-            <button id="send-btn" onclick="askAI()" title="Send">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+            <input type="file" id="image-input" accept="image/*" style="display:none;">
+            
+            <button type="button" onclick="document.getElementById('image-input').click()" class="icon-btn">📷</button>
+            
+            <textarea id="user-input" placeholder="Ask about the image..."></textarea>
+            <button onclick="askAI()" class="send-btn">Send</button>
         </div>
+        <div id="preview-container"></div>
 
     </div>
 
     <script src="chatbot.js"></script>
+    <script src="chat-logic.js"></script>
 
 </body>
 </html>

@@ -196,20 +196,75 @@ body {
 #user-input:focus       { border-color: #7F77DD; background: #fff; }
 #user-input::placeholder { color: #a0a0c0; }
 
-#send-btn {
+/* ── Icon button (camera / attachment) ── */
+.icon-btn {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: #534AB7;
-    border: none;
+    background: #f0eeff;
+    border: 1px solid #dddcf5;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: background 0.15s, transform 0.1s;
+    font-size: 16px;
+    line-height: 1;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    padding: 0;
 }
 
-#send-btn:hover  { background: #7F77DD; }
-#send-btn:active { transform: scale(0.94); }
-#send-btn svg    { width: 16px; height: 16px; }
+.icon-btn:hover  { background: #e4e1fb; border-color: #b8b4ec; }
+.icon-btn:active { transform: scale(0.94); }
+
+/* ── Send button (text label) ── */
+.send-btn {
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 20px;
+    background: #534AB7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    flex-shrink: 0;
+    transition: background 0.15s, transform 0.1s;
+    letter-spacing: 0.01em;
+}
+
+.send-btn:hover  { background: #7F77DD; }
+.send-btn:active { transform: scale(0.96); }
+
+/* ── Image preview strip ── */
+#preview-container {
+    padding: 0 14px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+}
+
+#preview-container:empty { display: none; }
+
+#preview-container img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #dddcf5;
+    box-shadow: 0 2px 8px rgba(83, 74, 183, 0.10);
+}
+
+.msg img {
+    display: block;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.msg img:hover {
+    transform: scale(1.02); 
+}
