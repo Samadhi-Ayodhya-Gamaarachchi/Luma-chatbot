@@ -21,7 +21,7 @@
 | ⚡ **100% Offline** | Runs entirely using Ollama — no internet needed |
 | 💬 **Clean UI** | Minimal and distraction-free chat interface |
 | 🔒 **Privacy-First** | No data ever leaves your device |
-| 🤖 **Powered by llama3.2:3b** | Capable local model  |
+| 🤖 **Powered by llama3.2:3b & moondream** | Capable local model & moondream for image upload  |
 | 🎯 **Beginner-Friendly** | Simple architecture, easy to understand and extend |
 
 ---
@@ -48,12 +48,14 @@ Download and install Ollama from: [https://ollama.com](https://ollama.com)
 
 ```bash
 ollama pull llama3.2:3b
+ollama pull moondream
 ```
 
 ### 3. Run Ollama
 
 ```bash
 ollama run llama3.2:3b
+ollama run moondream
 ```
 
 ### 4. Clone this repository
@@ -95,6 +97,7 @@ luma-ai/
 ├── chatbot.html    # Main chat interface
 ├── chatbot.css     # Styling
 ├── chatbot.js      # Frontend logic & Ollama API calls
+├── chat-logic.js   # Ollama API calls
 └── README.md       # Project documentation
 ```
 
